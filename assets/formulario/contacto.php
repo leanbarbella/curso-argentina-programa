@@ -88,10 +88,14 @@ try {
                         </body>
                     </html>";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    
-$mail->send();
-    header( 'Location: https://somapublicidad.com.ar/gracias.html' ) ;
+
+    if (!$mail->send()) {
+        echo "Ha ocurrido un error, el mensaje no ha sido enviado: " . $mail->ErrorInfo;
+    } else {
+        echo "Mensaje enviado!";
+    }    
+//$mail->send();
+//    header( 'Location: https://somapublicidad.com.ar/gracias.html' ) ;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    
 }
