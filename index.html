@@ -28,7 +28,7 @@
           <a class="nav-link" href="#educacion">Educación</a>
           <a class="nav-link" href="#">Trabajo</a>
           <a class="nav-link" href="#">Cursos</a>
-          <a class="btn btn-outline-primary" href="#">Contacto</a>
+          <a class="btn btn-outline-primary" href="#contacto">Contacto</a>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-4 ms-auto">
-        <h3>Datos Personales</h3>
+        <h4>Datos Personales</h4>
         <ul class="list-group">
           <li href="" class="list-group-item">
             <small>Nombre completo</small>
@@ -86,7 +86,7 @@
         </ul>
       </div>
       <div class="col-12 col-lg-4 pt-5 p-lg-0 me-auto" id="educacion">
-        <h3>Educación</h3>
+        <h4>Educación</h4>
         <ul class="list-group">
           <li class="list-group-item">
             <h5 class="my-2">Diseño Gráfico</h5>
@@ -100,15 +100,41 @@
     </div>
   </div>
 </div>
+<div class="section bg-secondary mt-5" id="contacto">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-8 col-12 mx-auto">
+        <h3 class="text-light pb-3">Contacto</h3>
+        <form id="contact-form" method="post" action="assets/formulario/contacto.php" role="form">
+          <!-- nombre -->
+          <div class="mb-3 form-group">
+            <input type="text" name="Nombre" class="form-control" id="form38" placeholder="Nombre" required="required" data-error="Nombre Requerido."> 
+          </div>
+          <!-- email -->
+          <div class="mb-3 form-group"> 
+            <input id="form_email" type="email" name="Email" class="form-control" placeholder="ejemplo@ejemplo.com.ar *" required="required" data-error="Casilla de correo no válida."> 
+          </div>
+          <!-- telefono -->
+          <div class="form-row">
+            <div class="mb-3 form-group col-md-12"> <input type="number" name="Telefono" class="form-control" id="form_message" placeholder="Teléfono"> </div>
+          </div>
+          <!-- mensaje -->
+          <div class="mb-4 form-group"> <textarea class="form-control" id="form43" rows="3" placeholder="Mensaje" name="Mensaje"></textarea> </div> 
+          <button type="submit" class="btn btn-outline-light">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </main>
-<footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
-  <div class="col-md-4 d-flex align-items-center justify-content-end ">
-    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+<footer class=" d-flex justify-content-between align-items-center py-3 border-top">
+  <div class="col-md-4 d-flex align-items-center ms-auto">
+    <a href="/" class=" me-2 mb-md-0 text-muted text-decoration-none lh-1">
       Leonard Jacobs | CV
     </a>
-    <span class="mb-3 mb-md-0 text-muted">© 2023</span>
+    <span class="mb-md-0 text-muted">© 2023</span>
   </div>
-  <ul class="nav col-md-4  list-unstyled d-flex">
+  <ul class="nav col-md-4  list-unstyled d-flex justify-content-end mx-auto">
     <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
     <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook ms-3" aria-hidden="true"></i></a></li>
     <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-instagram  ms-3" aria-hidden="true"></i></a></li>
