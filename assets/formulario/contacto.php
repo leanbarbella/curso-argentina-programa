@@ -23,9 +23,9 @@ $mensaje = $_POST["Mensaje"];
 
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "smtp.gmail.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "barbellaleandro@gmail.com";  // Mi cuenta de correo
-$smtpClave = "fausto2019";  // Mi contraseña
+$smtpHost = "somapublicidad.com.ar";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "leandro@somapublicidad.com.ar";  // Mi cuenta de correo
+$smtpClave = "soMa0303";  // Mi contraseña
 //$smtpHost ='mail.solution-it.com.ar';  // Dominio alternativo brindado en el email de alta 
 //$smtpUsuario = 'daniel@solution-it.com.ar';  // Mi cuenta de correo
 //$smtpClave = 'T7mRGO6y6fPLKjDYO78t';  // Mi contraseña
@@ -45,7 +45,7 @@ try {
     $mail->Username   = $smtpUsuario;                     // SMTP username
     $mail->Password   = $smtpClave;                               // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 25;  //587
+    $mail->Port       = 587;  
     $mail->SMTPOptions = array(
     'ssl' => array(
         'verify_peer' => false,
