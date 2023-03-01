@@ -15,7 +15,7 @@
 </head>
 <body>
   <header class="">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Nombre Apellido | CV</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,11 +24,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto justify-content-between">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#">Datos Personales</a>
-          <a class="nav-link" href="#">Educación</a>
+          <a class="nav-link" href="#datos-personales">Datos Personales</a>
+          <a class="nav-link" href="#educacion">Educación</a>
           <a class="nav-link" href="#">Trabajo</a>
           <a class="nav-link" href="#">Cursos</a>
-          <a class="btn btn-outline-light" href="#">Contacto</a>
+          <a class="btn btn-outline-primary" href="#">Contacto</a>
         </div>
       </div>
     </div>
@@ -58,9 +58,45 @@
 <div class="section" id="datos-personales">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-
+      <div class="col-12 col-lg-4 ms-auto">
+        <h3>Datos Personales</h3>
+        <ul class="list-group">
+          <li href="" class="list-group-item">
+            <small>Nombre completo</small>
+            <h5 class="mb-1">Nombre Apellido</h5>
+          </li>
+          <li href="#" class="list-group-item">
+            <small>Fecha de nacimiento</small>
+            <h5 class="mb-1">01/01/1990</h5>
+          </li>
+          <li href="#" class="list-group-item">
+            <small>Nacionalidad</small>
+            <h5 class="mb-1">Argentino</h5>
+          </li>
+          <li href="#" class="list-group-item">
+            <small>Estado Civil</small>
+            <h5 class="mb-1">Casado</h5>
+          </li>
+          <li href="#" class="list-group-item">
+            <small>Idiomas</small>
+            <h5 class="mb-1">
+              Español (Materno) <br> 
+              Inglés (Avanzado)</h5>
+          </li>
+        </ul>
       </div>
+      <div class="col-12 col-lg-4 pt-5 p-lg-0 me-auto" id="educacion">
+        <h3>Educación</h3>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h5 class="my-2">Diseño Gráfico</h5>
+            <p>Universidad de Flores (UFLO)</p>
+          </li>
+          <li class="list-group-item">
+            <h5 class="my-2">Técnico Electrónico</h5>
+            <p>Centro Educación Técnica N 9</p>
+          </li>
+        </ul>
     </div>
   </div>
 </div>

@@ -3,9 +3,6 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
-/*h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', sans-serif;
-}*/
 h1{
     font-weight: 600;
     text-transform: uppercase;
@@ -14,7 +11,6 @@ h1{
 }
 .subtitulo{
     text-transform: uppercase;
-
 }
 .bg-primary {
     background-color: #cc3333 !important; 
@@ -29,10 +25,20 @@ h1{
   color: #FFFFFF;
   box-shadow: none;
 }
-
 .section {
     padding: 70px 0;
     position: relative;
     background: #FFFFFF;
-
+}
+.btn-outline-primary {
+    --bs-btn-color: #cc3333;
+    --bs-btn-border-color: #cc3333;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #cc3333;
+    --bs-btn-hover-border-color: #cc3333;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #cc3333;
+    --bs-btn-active-border-color: #cc3333;
+    --bs-btn-disabled-color: #cc3333;
+    --bs-btn-disabled-border-color: #cc3333;
 }
