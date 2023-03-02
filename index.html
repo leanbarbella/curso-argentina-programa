@@ -159,21 +159,36 @@
 <div class="section bg-secondary mt-5" id="contacto">
   <div class="container py-4">
     <div class="row">
-      <div class="col-md-8 col-12 mx-auto text-light">
+      <div  class="col-md-8 col-12 mx-auto text-light">
         <h3 class="">Contacto</h3>
-        <p class="pb-3">Espero que pronto podamos trabajar juntos.</p>
+      </div>
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-md-4 col-12 mx-auto"> 
+        <p class="text-light">¡Espero que pronto podamos trabajar juntos!  <br> Puedes enviarme un WhatsApp al siguiente número o escribirme un correo.
+      </p></div>
+      <div class="col-md-4 col-12 pb-5">
+        <a href="" class="btn btn-lg btn-primary text-light"><i class="fab fa-whatsapp"></i>+54 9 299 5 123-123</a>
+      </div>
+      
+      <div class="col-md-8 col-12 mx-auto text-light">
+
+       
+        
         <form id="contact-form" method="post" action="assets/formulario/contacto.php" role="form">
           <!-- nombre -->
           <div class="mb-3 form-group">
-            <input type="text" name="Nombre" class="form-control" id="form38" placeholder="Nombre" required="required" data-error="Nombre Requerido."> 
+            <input type="text" name="Nombre" class="form-control" id="form38" placeholder="Nombre *" required="required" data-error="Nombre Requerido."> 
           </div>
-          <!-- email -->
-          <div class="mb-3 form-group"> 
-            <input id="form_email" type="email" name="Email" class="form-control" placeholder="ejemplo@ejemplo.com.ar *" required="required" data-error="Casilla de correo no válida."> 
-          </div>
-          <!-- telefono -->
-          <div class="form-row">
-            <div class="mb-3 form-group col-md-12"> <input type="number" name="Telefono" class="form-control" id="form_message" placeholder="Teléfono"> </div>
+          <div class="row g-3">
+            <!-- email -->
+            <div class="mb-3 col-md-6 form-group"> 
+              <input id="form_email" type="email" name="Email" class="form-control" placeholder="ejemplo@ejemplo.com.ar *" required="required" data-error="Casilla de correo no válida."> 
+            </div>
+            <!-- telefono -->
+            <div class="mb-3 form-group col-md-6"> 
+              <input type="number" name="Telefono" class="form-control" id="form_message" placeholder="Teléfono">
+            </div>
           </div>
           <!-- mensaje -->
           <div class="mb-4 form-group"> <textarea class="form-control" id="form43" rows="3" placeholder="Mensaje" name="Mensaje"></textarea> </div> 
